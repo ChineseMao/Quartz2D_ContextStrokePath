@@ -1,14 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +19,72 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6bV-kn-a6x" customClass="ContextView">
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6bV-kn-a6x" secondAttribute="height" multiplier="2:1.3" id="oUL-3i-W0v"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxj-R1-0fz">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSk-HD-9C4">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-YM-edR">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqv-9b-r3r">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2W0-Ks-rAb">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l4S-X1-Xck">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oc3-BG-cpb">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD4-57-eyi">
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ts-yu-C4z">
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6ts-yu-C4z" firstAttribute="trailing" secondItem="2W0-Ks-rAb" secondAttribute="trailing" id="0RO-JB-gZ2"/>
+                            <constraint firstItem="dqv-9b-r3r" firstAttribute="centerY" secondItem="2W0-Ks-rAb" secondAttribute="centerY" id="1mb-zc-VSb"/>
+                            <constraint firstItem="dSk-HD-9C4" firstAttribute="centerY" secondItem="Oxj-R1-0fz" secondAttribute="centerY" id="5I4-JG-NM3"/>
+                            <constraint firstItem="dPq-YM-edR" firstAttribute="centerY" secondItem="Oxj-R1-0fz" secondAttribute="centerY" id="9aP-UF-LcT"/>
+                            <constraint firstItem="JD4-57-eyi" firstAttribute="leading" secondItem="l4S-X1-Xck" secondAttribute="leading" id="G94-9J-I0L"/>
+                            <constraint firstItem="Oxj-R1-0fz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="GrP-sq-dxw"/>
+                            <constraint firstItem="Oxj-R1-0fz" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Jps-zW-yhS"/>
+                            <constraint firstItem="Oc3-BG-cpb" firstAttribute="centerY" secondItem="6ts-yu-C4z" secondAttribute="centerY" id="N1s-ZQ-hnm"/>
+                            <constraint firstItem="6bV-kn-a6x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RCo-tg-6fM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dPq-YM-edR" secondAttribute="trailing" constant="30" id="Tnd-2a-9GD"/>
+                            <constraint firstItem="l4S-X1-Xck" firstAttribute="leading" secondItem="dPq-YM-edR" secondAttribute="leading" id="VaK-kd-Vow"/>
+                            <constraint firstItem="dqv-9b-r3r" firstAttribute="centerX" secondItem="dSk-HD-9C4" secondAttribute="centerX" id="W98-dX-wly"/>
+                            <constraint firstItem="JD4-57-eyi" firstAttribute="centerY" secondItem="6ts-yu-C4z" secondAttribute="centerY" id="YBV-L0-ARm"/>
+                            <constraint firstItem="l4S-X1-Xck" firstAttribute="centerY" secondItem="2W0-Ks-rAb" secondAttribute="centerY" id="cb2-o4-0ju"/>
+                            <constraint firstItem="dPq-YM-edR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e0l-dB-VnM"/>
+                            <constraint firstItem="Oc3-BG-cpb" firstAttribute="centerX" secondItem="dqv-9b-r3r" secondAttribute="centerX" id="iQx-lm-pQI"/>
+                            <constraint firstItem="6bV-kn-a6x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="ivl-fW-2d2"/>
+                            <constraint firstItem="dSk-HD-9C4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mMJ-Cw-gmB"/>
+                            <constraint firstItem="dqv-9b-r3r" firstAttribute="top" secondItem="dSk-HD-9C4" secondAttribute="bottom" constant="42" id="nKg-tE-rzy"/>
+                            <constraint firstItem="Oc3-BG-cpb" firstAttribute="top" secondItem="dqv-9b-r3r" secondAttribute="bottom" constant="45" id="pdr-68-hbM"/>
+                            <constraint firstAttribute="trailing" secondItem="6bV-kn-a6x" secondAttribute="trailing" id="sjn-me-Fal"/>
+                            <constraint firstItem="dSk-HD-9C4" firstAttribute="leading" secondItem="Oxj-R1-0fz" secondAttribute="trailing" constant="72" id="xwU-f6-LeS"/>
+                            <constraint firstItem="2W0-Ks-rAb" firstAttribute="trailing" secondItem="Oxj-R1-0fz" secondAttribute="trailing" id="yAp-0G-lZ9"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
